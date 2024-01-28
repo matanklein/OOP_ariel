@@ -434,7 +434,7 @@ public class GameLogic implements PlayableLogic{
         pieceStatistics.addDistanceCount(-distance);
 
         if(!allPiecesAtPosition[dstStatistics.getRow()][dstStatistics.getCol()].isEmpty()){
-            allPiecesAtPosition[dstStatistics.getRow()][dstStatistics.getCol()].removeLast();
+            allPiecesAtPosition[dstStatistics.getRow()][dstStatistics.getCol()].remove(allPiecesAtPosition[dstStatistics.getRow()][dstStatistics.getCol()].size()-1);
         }
     }
 
