@@ -39,12 +39,12 @@ public abstract class ConcretePiece implements Piece{
     }
     public void removeMove(){
         if(!moves.isEmpty() && moves.size() > 1){
-            this.moves.removeLast();
+            moves.remove(moves.size()-1);
         }
     }
     public Position getLastMove(){
         if(!moves.isEmpty()){
-            return this.moves.getLast();
+            return moves.get(moves.size()-1);
         }
         return null;
     }
