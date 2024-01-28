@@ -334,7 +334,7 @@ public class GameLogic implements PlayableLogic{
         if(GameLogic.secondPlayerWon){
             for (int i = 0; i < playerTwoPieces.size(); i++) {
                 if(playerTwoPieces.get(i).getMoveSize() > 1){
-                    System.out.println(playerTwoPieces.get(i).getId() + ":[" + playerTwoPieces.get(i).printMove() + "]");}
+                    System.out.println(playerTwoPieces.get(i).getId() + ": [" + playerTwoPieces.get(i).printMove() + "]");}
             }
             for (int j = 0; j < playerOnePieces.size(); j++) {
                 if(playerOnePieces.get(j).getMoveSize() > 1){
